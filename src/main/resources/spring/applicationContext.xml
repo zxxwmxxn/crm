@@ -21,10 +21,10 @@
     <!--声明sqlSession对象-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
           <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-          <property name="basePackage" value="com.bjpowenode.crm.settings.mapper"/>
+          <property name="basePackage" value="com.bjpowenode.crm.settings.mapper,com.bjpowenode.crm.workbench.mapper"/>
     </bean>
     <!--声明service的注解@Service所在包的位置-->
-    <context:component-scan base-package="com.bjpowenode.crm.settings.service"/>
+    <context:component-scan base-package="com.bjpowenode.crm.settings.service,com.bjpowenode.crm.workbench.service"/>
     <!--事务的配置 注解的配置 aspect注解的配置-->
 
 

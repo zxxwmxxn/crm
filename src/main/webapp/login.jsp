@@ -14,6 +14,11 @@
     <script type="text/javascript" src="jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(function () {
+
+            if (window.top!=window){
+                window.top.location=window.location;
+            }
+
             $("#loginAct").val("");
             $("#loginAct").focus();
 
