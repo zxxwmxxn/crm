@@ -51,7 +51,7 @@
                 type: "post",
                 success: function (result) {
                     if (result.success) {
-                         window.location.href="workbench/index.html";
+                         window.location.href="workbench/index.jsp";
                     } else {
                         alert("失败");
                         alert(result.msg);
@@ -69,7 +69,7 @@
 </div>
 <div id="top" style="height: 50px; background-color: #3C3C3C; width: 100%;">
     <div style="position: absolute; top: 5px; left: 0px; font-size: 30px; font-weight: 400; color: white; font-family: 'times new roman'">
-        CRM &nbsp;<span style="font-size: 12px;">&copy;2017&nbsp;动力节点</span></div>
+        CRM &nbsp;<span style="font-size: 12px;">&copy;2021&nbsp;张新想</span></div>
 </div>
 
 <div style="position: absolute; top: 120px; right: 100px;width:450px;height:400px;border:1px solid #D5D5D5">
@@ -77,7 +77,7 @@
         <div class="page-header">
             <h1>登录</h1>
         </div>
-        <form action="workbench/index.html" class="form-horizontal" role="form">
+        <form action="workbench/index.jsp" class="form-horizontal" role="form">
             <div class="form-group form-group-lg">
                 <div style="width: 350px;">
                     <input id="loginAct" class="form-control" type="text" placeholder="用户名">
