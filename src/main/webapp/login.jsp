@@ -15,8 +15,8 @@
     <script type="text/javascript">
         $(function () {
 
-            if (window.top!=window){
-                window.top.location=window.location;
+            if (window.top != window) {
+                window.top.location = window.location;
             }
 
             $("#loginAct").val("");
@@ -56,7 +56,7 @@
                 type: "post",
                 success: function (result) {
                     if (result.success) {
-                         window.location.href="workbench/index.jsp";
+                        window.location.href = "workbench/index.jsp";
                     } else {
                         alert("失败");
                         alert(result.msg);
