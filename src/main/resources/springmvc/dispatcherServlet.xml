@@ -9,10 +9,10 @@
  <!--springmvc配置文件，组件扫描器，声明controller和其他相关的对象，也就是说你需要扫描创建对象的注解都在哪些类上-->
     <context:component-scan base-package="com.bjpowenode.crm.settings.web.controller,com.bjpowenode.crm.workbench.web.controller"/>
   <!--视图解析器 配置前缀和后缀-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
           <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
-    </bean>
+    </bean>-->
     <!--注解驱动  用于解决ajax，解决静态资源文件-->
     <mvc:annotation-driven/>
 
